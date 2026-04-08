@@ -56,7 +56,7 @@ export default function BarbershopWebsite() {
               </h1>
               <p className="mt-6 max-w-xl text-base leading-7 text-white md:text-lg brightness-125 drop-shadow-lg font-semibold">
                 Premium grooming in <span className="font-bold text-amber-300">Bay Ridge, Brooklyn</span>. Clean fades,
-                sharp lines, and detail-driven cuts by <span className="font-bold text-amber-300">Mo</span>.
+                sharp lines, and detail-driven cuts by <span className="font-bold text-amber-300">Moe</span>.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
@@ -65,7 +65,7 @@ export default function BarbershopWebsite() {
                   rel="noreferrer"
                   className="rounded-full bg-amber-400 px-7 py-3 font-semibold uppercase tracking-wide text-black transition hover:scale-105 shadow-lg"
                 >
-                  Book with Mo
+                  Book with Moe
                 </a>
                 <a
                   href="#gallery"
@@ -83,9 +83,9 @@ export default function BarbershopWebsite() {
       <section id="location" className="relative z-20 border-b border-white/10 px-6 py-20 bg-neutral-950/90">
         <div className="mx-auto mb-10 max-w-7xl">
           <p className="text-xs uppercase tracking-[0.45em] text-amber-300">About</p>
-          <h2 className="mt-4 text-3xl font-black uppercase md:text-5xl">Mo</h2>
+          <h2 className="mt-4 text-3xl font-black uppercase md:text-5xl">Moe</h2>
           <p className="mt-4 max-w-2xl text-neutral-300">
-            Craft Barbershop, led by <span className="font-semibold text-white"> Mo </span>, brings precision, consistency, and attention to detail to every cut. Based in <span className="font-semibold text-white">Bay Ridge</span>, the shop has built a reputation for clean fades, sharp lines, and a modern approach to classic grooming.
+            Craft Barbershop, led by <span className="font-semibold text-white"> Moe </span>, brings precision, consistency, and attention to detail to every cut. Based in <span className="font-semibold text-white">Bay Ridge</span>, the shop has built a reputation for clean fades, sharp lines, and a modern approach to classic grooming.
           </p>
         </div>
 
