@@ -190,6 +190,90 @@ export default function BarbershopWebsite() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-white/10 bg-neutral-950 px-6 py-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 md:grid-cols-3">
+            {/* Brand Section */}
+            <div>
+              <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125">
+                Craft Barbershop
+              </p>
+              <h3 className="mt-3 text-2xl font-black uppercase">Craft.</h3>
+              <p className="mt-4 text-sm text-neutral-400">
+                Premium grooming in Bay Ridge, Brooklyn. Clean cuts, sharp lines, and detail-driven service.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125 font-semibold">
+                Quick Links
+              </p>
+              <ul className="mt-4 space-y-3 text-sm text-neutral-300">
+                <li>
+                  <a href="#gallery" className="hover:text-amber-300 transition">
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="#location" className="hover:text-amber-300 transition">
+                    Location & Hours
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/craftbarbershop26"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-amber-300 transition"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125 font-semibold">
+                Contact
+              </p>
+              <ul className="mt-4 space-y-3 text-sm text-neutral-300">
+                <li>
+                  <a href="tel:+19297410403" className="hover:text-amber-300 transition">
+                    (929) 741-0403
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/dir//CRAFT+BARBERSHOP,+9301+3rd+Ave,+Brooklyn,+NY+11209"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-amber-300 transition"
+                  >
+                    9301 3rd Avenue, Brooklyn, NY
+                  </a>
+                </li>
+                <li>Tuesday–Sunday • 11 AM – 8 PM</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="mt-10 border-t border-white/10" />
+
+          {/* Bottom Section */}
+          <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
+            <p className="text-center text-sm text-neutral-500 md:text-left">
+              © 2024 Craft Barbershop. All rights reserved.
+            </p>
+            <p className="text-center text-xs text-neutral-600">
+              Premium grooming by Moe in Bay Ridge, Brooklyn
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
