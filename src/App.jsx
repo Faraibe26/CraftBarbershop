@@ -266,7 +266,7 @@ export default function BarbershopWebsite() {
           {/* Bottom Section */}
           <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-center text-sm text-neutral-500 md:text-left">
-              © 2024 Craft Barbershop. All rights reserved.
+              © 2026 Craft Barbershop. All rights reserved.
             </p>
             <p className="text-center text-xs text-neutral-600">
               Premium grooming by Moe in Bay Ridge, Brooklyn
