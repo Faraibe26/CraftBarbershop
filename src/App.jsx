@@ -115,7 +115,7 @@ export default function BarbershopWebsite() {
                   </p>
                   <p>Tuesday–Sunday • 11 AM – 8 PM</p>
                   <p>
-                    📞 <a href="tel:+17185550000" className="underline hover:text-amber-300">(718) 555-0000</a>
+                    📞 <a href="tel:+19297410403" className="underline hover:text-amber-300">(929) 741-0403</a>
                   </p>
                   <p>
                     Instagram:
