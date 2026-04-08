@@ -34,21 +34,19 @@ export default function BarbershopWebsite() {
   ];
 
   return (
-    <div 
-      className="min-h-screen text-white"
-      style={{
+    <div className="min-h-screen text-white">
+      {/* Hero Section with Logo Background */}
+      <section className="relative overflow-hidden min-h-screen flex items-center" style={{
         backgroundImage: `url(${logo})`,
-        backgroundSize: '60%',
+        backgroundSize: '40%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
-      }}
-    >
-      {/* Dark overlay for better text visibility */}
-      <div className="fixed inset-0 bg-black/35 pointer-events-none" />
-      
-      <section className="relative z-10 overflow-hidden min-h-screen flex items-center">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-24 w-full">
+      }}>
+        {/* Dark overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black/35 pointer-events-none" />
+        
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-24 w-full">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125">
