@@ -38,7 +38,7 @@ export default function BarbershopWebsite() {
       className="min-h-screen text-white"
       style={{
         backgroundImage: `url(${logo})`,
-        backgroundSize: 'clamp(100%, 80vw, 50%)',
+        backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
