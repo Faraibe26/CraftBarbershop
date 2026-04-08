@@ -35,14 +35,28 @@ export default function BarbershopWebsite() {
 
   return (
     <div className="min-h-screen text-white">
+      <style>{`
+        @media (max-width: 767px) {
+          .hero-section {
+            background-image: url(${logo});
+            background-size: 85%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          }
+        }
+        @media (min-width: 768px) {
+          .hero-section {
+            background-image: url(${logo});
+            background-size: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          }
+        }
+      `}</style>
       {/* Hero Section with Logo Background */}
-      <section className="relative overflow-hidden min-h-screen flex items-center" style={{
-        backgroundImage: `url(${logo})`,
-        backgroundSize: window.innerWidth < 768 ? '85%' : '40%',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-      }}>
+      <section className="hero-section relative overflow-hidden min-h-screen flex items-center">
         {/* Dark overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/35 pointer-events-none" />
         
