@@ -54,33 +54,33 @@ export default function BarbershopWebsite() {
               <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125">
                 Craft Barbershop
               </p>
-              <h1 className="mt-5 text-5xl font-black uppercase leading-[0.9] tracking-tight md:text-7xl text-white brightness-150 drop-shadow-xl">
+              <h1 className="mt-5 text-4xl md:text-5xl lg:text-7xl font-black uppercase leading-[0.9] tracking-tight text-white brightness-150 drop-shadow-xl">
                 Brooklyn.
                 <br />
                 Cut Different.
               </h1>
-              <p className="mt-6 max-w-xl text-base leading-7 text-white md:text-lg brightness-125 drop-shadow-lg font-semibold">
+              <p className="mt-6 max-w-xl text-sm md:text-base lg:text-lg leading-7 text-white brightness-125 drop-shadow-lg font-semibold">
                 Premium grooming in <span className="font-bold text-amber-300">Bay Ridge, Brooklyn</span>. Clean fades,
                 sharp lines, and detail-driven cuts by <span className="font-bold text-amber-300">Moe</span>.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-wrap gap-3 md:gap-4">
                 <a
                   href="https://www.instagram.com/craftbarbershop26"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-amber-400 px-7 py-3 font-semibold uppercase tracking-wide text-black transition hover:scale-105 shadow-lg"
+                  className="rounded-full bg-amber-400 px-6 md:px-7 py-2.5 md:py-3 font-semibold uppercase tracking-wide text-black transition hover:scale-105 shadow-lg text-sm md:text-base"
                 >
                   Book with Moe
                 </a>
                 <a
                   href="#gallery"
-                  className="rounded-full border border-white/40 bg-black/40 px-7 py-3 font-semibold uppercase tracking-wide text-white backdrop-blur transition hover:bg-black/60 shadow-lg"
+                  className="rounded-full border border-white/40 bg-black/40 px-6 md:px-7 py-2.5 md:py-3 font-semibold uppercase tracking-wide text-white backdrop-blur transition hover:bg-black/60 shadow-lg text-sm md:text-base"
                 >
                   View Gallery
                 </a>
               </div>
             </div>
-            <div></div>
+            <div className="hidden lg:block"></div>
           </div>
         </div>
       </section>
@@ -101,12 +101,12 @@ export default function BarbershopWebsite() {
             rel="noreferrer"
             className="group block rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur transition hover:bg-white/10"
           >
-            <div className="flex items-start justify-between gap-8">
-              <div className="flex-1">
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-8">
+              <div className="flex-1 w-full">
                 <p className="text-xs uppercase tracking-[0.45em] text-amber-300">Location</p>
-                <div className="mt-4 flex items-center gap-4">
-                  <h3 className="text-3xl font-black uppercase">Craft Barbershop</h3>
-                  <div>
+                <div className="mt-4 flex flex-col lg:flex-row lg:items-center lg:gap-4">
+                  <h3 className="text-2xl lg:text-3xl font-black uppercase">Craft Barbershop</h3>
+                  <div className="mt-3 lg:mt-0">
                     <p className="text-amber-300 font-semibold flex items-center gap-1 whitespace-nowrap">
                       ⭐ 4.9 / 5.0
                     </p>
@@ -114,7 +114,7 @@ export default function BarbershopWebsite() {
                   </div>
                 </div>
 
-                <div className="mt-6 space-y-3 text-neutral-300">
+                <div className="mt-6 space-y-2 lg:space-y-3 text-sm lg:text-base text-neutral-300">
                   <p className="font-semibold text-white underline group-hover:text-amber-300">
                     9301 3rd Avenue, Brooklyn, NY
                   </p>
@@ -136,8 +136,8 @@ export default function BarbershopWebsite() {
                 </div>
               </div>
               
-              <div className="flex flex-col items-center gap-4">
-                <div className="h-80 w-80 overflow-hidden rounded-lg border border-white/10 flex-shrink-0">
+              <div className="w-full lg:w-auto flex justify-center lg:justify-end">
+                <div className="h-48 w-48 lg:h-80 lg:w-80 overflow-hidden rounded-lg border border-white/10 flex-shrink-0">
                   <img
                     src={blackTee}
                     alt="Craft Barbershop"
@@ -151,16 +151,16 @@ export default function BarbershopWebsite() {
 
         <div className="mx-auto mt-16 max-w-7xl">
           <p className="text-xs uppercase tracking-[0.45em] text-amber-300">Services</p>
-          <h2 className="mt-4 text-4xl font-black uppercase md:text-6xl">Built Sharp.</h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-6xl font-black uppercase">Built Sharp.</h2>
+          <div className="mt-12 grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
                 key={service.name}
-                className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur"
+                className="rounded-[2rem] border border-white/10 bg-white/5 p-4 md:p-6 backdrop-blur"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-2xl font-bold uppercase">{service.name}</h3>
-                  <span className="rounded-full bg-amber-400/15 px-3 py-1 text-sm font-semibold text-amber-300">
+                <div className="flex items-start justify-between gap-3 md:gap-4">
+                  <h3 className="text-lg md:text-2xl font-bold uppercase">{service.name}</h3>
+                  <span className="rounded-full bg-amber-400/15 px-2.5 md:px-3 py-1 text-xs md:text-sm font-semibold text-amber-300 whitespace-nowrap">
                     {service.price}
                   </span>
                 </div>
@@ -173,12 +173,12 @@ export default function BarbershopWebsite() {
       <section id="gallery" className="relative z-20 px-6 py-20 bg-neutral-950/90">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs uppercase tracking-[0.45em] text-amber-300">Gallery</p>
-          <h2 className="mt-4 text-4xl font-black uppercase md:text-6xl">The Look.</h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-6xl font-black uppercase">The Look.</h2>
+          <div className="mt-12 grid gap-4 md:gap-6 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
             {gallery.map((item) => (
               <div
                 key={item.title}
-                className="group relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 bg-black"
+                className="group relative aspect-[4/5] overflow-hidden rounded-[1rem] md:rounded-[2rem] border border-white/10 bg-black"
               >
                 <img
                   src={item.src}
@@ -193,14 +193,14 @@ export default function BarbershopWebsite() {
 
       <footer className="border-t border-white/10 bg-neutral-950 px-6 py-12">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {/* Brand Section */}
             <div>
               <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125">
                 Craft Barbershop
               </p>
-              <h3 className="mt-3 text-2xl font-black uppercase">Craft.</h3>
-              <p className="mt-4 text-sm text-neutral-400">
+              <h3 className="mt-3 text-xl md:text-2xl font-black uppercase">Craft.</h3>
+              <p className="mt-4 text-xs md:text-sm text-neutral-400">
                 Premium grooming in Bay Ridge, Brooklyn. Clean cuts, sharp lines, and detail-driven service.
               </p>
             </div>
@@ -210,7 +210,7 @@ export default function BarbershopWebsite() {
               <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125 font-semibold">
                 Quick Links
               </p>
-              <ul className="mt-4 space-y-3 text-sm text-neutral-300">
+              <ul className="mt-4 space-y-2 md:space-y-3 text-xs md:text-sm text-neutral-300">
                 <li>
                   <a href="#gallery" className="hover:text-amber-300 transition">
                     Gallery
@@ -239,7 +239,7 @@ export default function BarbershopWebsite() {
               <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125 font-semibold">
                 Contact
               </p>
-              <ul className="mt-4 space-y-3 text-sm text-neutral-300">
+              <ul className="mt-4 space-y-2 md:space-y-3 text-xs md:text-sm text-neutral-300">
                 <li>
                   <a href="tel:+19297410403" className="hover:text-amber-300 transition">
                     (929) 741-0403
