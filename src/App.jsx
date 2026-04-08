@@ -1,6 +1,8 @@
 export default function BarbershopWebsite() {
   const logo = "/logo.jpg";
-  const blackTee = "/street.jpg";
+  const blac          <p className="mt-4 max-w-2xl text-neutral-300">
+            Craft Barbershop, led by <span className="font-semibold text-white">Moe</span>, brings precision, consistency, and attention to detail to every cut. Based in <span className="font-semibold text-white">Bay Ridge</span>, the shop has built a reputation for clean fades, sharp lines, and a modern approach to classic grooming.
+          </p>e = "/street.jpg";
 
   const gallery = [
     {
@@ -85,7 +87,7 @@ export default function BarbershopWebsite() {
           <p className="text-xs uppercase tracking-[0.45em] text-amber-300">About</p>
           <h2 className="mt-4 text-3xl font-black uppercase md:text-5xl">Moe</h2>
           <p className="mt-4 max-w-2xl text-neutral-300">
-            Craft Barbershop, led by <span className="font-semibold text-white"> Moe </span>, brings precision, consistency, and attention to detail to every cut. Based in <span className="font-semibold text-white">Bay Ridge</span>, the shop has built a reputation for clean fades, sharp lines, and a modern approach to classic grooming.
+            Craft Barbershop, led by <span className="font-semibold text-white">Moe</span>, brings precision, consistency, and attention to detail to every cut. Based in <span className="font-semibold text-white">Bay Ridge</span>, the shop has built a reputation for clean fades, sharp lines, and a modern approach to classic grooming.
           </p>
         </div>
 
