@@ -38,7 +38,7 @@ export default function BarbershopWebsite() {
       {/* Hero Section with Logo Background */}
       <section className="relative overflow-hidden min-h-screen flex items-center" style={{
         backgroundImage: `url(${logo})`,
-        backgroundSize: '40%',
+        backgroundSize: 'auto 80%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
