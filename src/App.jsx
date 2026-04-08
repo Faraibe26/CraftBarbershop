@@ -1,8 +1,6 @@
 export default function BarbershopWebsite() {
   const logo = "/logo.jpg";
-  const blac          <p className="mt-4 max-w-2xl text-neutral-300">
-            Craft Barbershop, led by <span className="font-semibold text-white">Moe</span>, brings precision, consistency, and attention to detail to every cut. Based in <span className="font-semibold text-white">Bay Ridge</span>, the shop has built a reputation for clean fades, sharp lines, and a modern approach to classic grooming.
-          </p>e = "/street.jpg";
+  const blackTee = "/street.jpg";
 
   const gallery = [
     {
@@ -24,10 +22,15 @@ export default function BarbershopWebsite() {
   ];
 
   const services = [
-    { name: "Haircut", price: "$25+" },
-    { name: "Fade", price: "$35+" },
-    { name: "Haircut + Beard", price: "$45+" },
-    { name: "Premium Service", price: "$60" },
+    { name: "Haircut", price: "$25" },
+    { name: "Beard Maintenance", price: "$25" },
+    { name: "Shave", price: "$25" },
+    { name: "Hot Towel Shave", price: "$30" },
+    { name: "Line Up Only", price: "$10" },
+    { name: "Eyebrow Trimming", price: "$10" },
+    { name: "Shampoo & Conditioning", price: "$10" },
+    { name: "Waxing", price: "$10" },
+    { name: "Blow Out", price: "$15" },
   ];
 
   return (
@@ -149,7 +152,7 @@ export default function BarbershopWebsite() {
         <div className="mx-auto mt-16 max-w-7xl">
           <p className="text-xs uppercase tracking-[0.45em] text-amber-300">Services</p>
           <h2 className="mt-4 text-4xl font-black uppercase md:text-6xl">Built Sharp.</h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
                 key={service.name}
