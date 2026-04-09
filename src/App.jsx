@@ -42,7 +42,12 @@ export default function BarbershopWebsite() {
             background-size: 85%;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-attachment: scroll;
+            min-height: 120vh;
+          }
+          .hero-content {
+            position: relative;
+            top: 50vh;
           }
         }
         @media (min-width: 768px) {
@@ -53,6 +58,9 @@ export default function BarbershopWebsite() {
             background-repeat: no-repeat;
             background-attachment: fixed;
           }
+          .hero-content {
+            position: static;
+          }
         }
       `}</style>
       {/* Hero Section with Logo Background */}
@@ -60,7 +68,7 @@ export default function BarbershopWebsite() {
         {/* Dark overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/35 pointer-events-none" />
         
-        <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-24 w-full">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-24 w-full hero-content">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125">
