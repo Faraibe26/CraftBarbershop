@@ -42,6 +42,7 @@ export default function BarbershopWebsite() {
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: scroll;
+          height: 100vh;
         }
         @media (min-width: 768px) {
           .logo-section {
@@ -75,7 +76,7 @@ export default function BarbershopWebsite() {
       `}</style>
       
       {/* Logo Section - Full Screen First */}
-      <section className="logo-section relative overflow-hidden min-h-screen flex items-end justify-center pb-8">
+      <section className="logo-section relative overflow-hidden flex items-end justify-center pb-8">
         {/* Subtle overlay */}
         <div className="absolute inset-0 bg-black/20 pointer-events-none" />
         <div className="relative z-10 text-center">
