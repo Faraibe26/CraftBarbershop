@@ -36,33 +36,60 @@ export default function BarbershopWebsite() {
   return (
     <div className="min-h-screen text-white">
       <style>{`
-        @media (max-width: 767px) {
-          .hero-section {
-            background-image: url(${logo});
-            background-size: 85%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-          }
+        .logo-section {
+          background-image: url(${logo});
+          background-size: 90%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: scroll;
         }
         @media (min-width: 768px) {
-          .hero-section {
-            background-image: url(${logo});
-            background-size: 40%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+          .logo-section {
+            background-size: 55%;
+          }
+        }
+        
+        @keyframes logoGrow {
+          0%, 100% {
+            background-size: 90%;
+          }
+          50% {
+            background-size: 95%;
+          }
+        }
+        
+        @media (min-width: 768px) {
+          @keyframes logoGrowDesktop {
+            0%, 100% {
+              background-size: 55%;
+            }
+            50% {
+              background-size: 60%;
+            }
+          }
+          
+          .logo-section:hover {
+            animation: logoGrowDesktop 2s ease-in-out infinite;
           }
         }
       `}</style>
-      {/* Hero Section with Logo Background */}
-      <section className="hero-section relative overflow-hidden min-h-screen flex items-center">
-        {/* Dark overlay for better text visibility */}
-        <div className="absolute inset-0 bg-black/35 pointer-events-none" />
-        
-        <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-24 w-full">
+      
+      {/* Logo Section - Full Screen First */}
+      <section className="logo-section relative overflow-hidden min-h-screen flex items-end justify-center pb-8">
+        {/* Subtle overlay */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+        <div className="relative z-10 text-center">
+          <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125 animate-bounce">
+            ↓ Scroll to explore
+          </p>
+        </div>
+      </section>
+
+      {/* Hero Section with Content */}
+      <section className="content-section relative overflow-hidden py-16 md:py-24 bg-black min-h-screen flex items-center">
+        <div className="mx-auto max-w-7xl px-6 w-full">
           <div className="grid items-center gap-10 lg:grid-cols-2">
-            <div>
+            <div className="max-w-lg">
               <p className="text-xs uppercase tracking-[0.45em] text-amber-300 brightness-125">
                 Craft Barbershop
               </p>
